@@ -11,8 +11,8 @@ pipeline {
         stage('Checkout') {
             steps {
               script {
-                    withCredentials([string(credentialsId: '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', variable: 'PAT')]) {
-                        git branch: 'main', credentialsId: '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', url: 'https://github.com/Harishpandu43/Mental-health-assistance.git'
+                    withCredentials([string(credentialsId: '', variable: 'PAT')]) {
+                        git branch: 'main', credentialsId: '', url: 'https://github.com/Harishpandu43/Mental-health-assistance.git'
                     }
                 }
             }
